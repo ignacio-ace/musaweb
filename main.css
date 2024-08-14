@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Añadido para que la posición absoluta sea relativa al cuerpo */
+}
+
+header{
+    margin-top: 0px;
+}
+
+.nav-links {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Asegurando que esté por encima de la imagen */
+    margin-bottom: 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrando los elementos del navbar horizontalmente */
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    top: 10%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image-container {
+    background-image: url('Contrafrente.jpg');
+    height: 100%; 
+    width: 100%; 
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+
+.nav-links li a:active{
+    text-decoration: underline;
+}
+
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 20;
+    z-index: 1;
+    color: #fff5ee; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    width: calc(50% - 20px);
+    text-align: left;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    font-stretch: condensed
+}
